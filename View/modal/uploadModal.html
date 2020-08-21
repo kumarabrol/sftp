@@ -1,0 +1,50 @@
+<div id="uploadFileModal" class="reveal-modal small" data-options="close_on_background_click:false"   data-reveal aria-labelledby="modalTitle" aria-hidden="true"
+     role="dialog">
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+
+    <!--block title-->
+    <div class="row">
+        <div class="large-12 columns">
+            <h5 id="modalTitle">Upload File</h5>
+        </div>
+    </div>
+
+    <!--block add -->
+    <div class="row">
+
+        <div class="large-9 columns text-left">
+            <span class="createPathFontStyle"> Default Path: </span>
+            <span class="createPathFontStyle" id="defaultPathForUpload"></span>
+            <span class="createPathChoosePathBtnStyle " id="chooseOtherPathForUpload" data-dropdown="dropUpload">Choose Path</span>
+            <ul id="dropUpload" class="medium f-dropdown" data-dropdown-content tabindex="-1" aria-hidden="true" aria-autoclose="false" tabindex="-1">
+
+            </ul>
+        </div>
+
+        <div class="large-3 columns text-right">
+            <div style="position: relative;height: 49px;" >
+                <a  class="button radius tiny secondary" id="selectFileBtn" style="position: absolute;top:0;left:13px;padding: 7px;">Choose Files</a>
+                <input  id="fileupload" type="file" style="opacity: 0;position: absolute;top: 4px;left: 12px;" name="files[]" multiple>
+            </div>
+        </div>
+    </div>
+
+    <!-- block progress bar-->
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="progress success round">
+                <span class="meter" style="width: 0"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- block number of percentage-->
+    <div class="row">
+        <div class="large-12 columns text-center">
+            <b id="uploadingCompleted" style="color:#1abc9c;"></b>
+        </div>
+    </div>
+
+</div>
+
+</div>

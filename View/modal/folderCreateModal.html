@@ -1,0 +1,48 @@
+<div id="createNewFolder" data-options="close_on_background_click:false"  class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
+     role="dialog">
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+
+    <div class="row">
+        <div class="large-12 columns">
+
+
+            <!--block title-->
+            <div class="row">
+                <div class="large-12 columns">
+                    <h5 id="modalTitle">Create New Folder</h5>
+                </div>
+            </div>
+
+
+            <!--block taken new folder name -->
+            <div class="row">
+                <div class="large-12 columns createPathModal">
+                    <input type="text" id="inputFolderName" placeholder="New Name For Folder"/>
+                </div>
+            </div>
+
+            <!-- block select the path-->
+            <div class="row">
+                <div class="large-12 columns">
+                    <span class="createPathFontStyle"> Default Path: </span>
+                    <span class="createPathFontStyle" id="defaultPath"></span>
+                    <span class="createPathChoosePathBtnStyle " id="chooseOtherPath" data-dropdown="drop">Choose Path</span>
+                    <ul id="drop" class="medium f-dropdown" data-dropdown-content tabindex="-1" aria-hidden="true" aria-autoclose="false" tabindex="-1">
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- block create the new folder-->
+            <div class="row">
+                <div class="large-12 columns createPathModal">
+                    <a id="createNewFolderBtnModal" class="button radius tiny">Create</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
